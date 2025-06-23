@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.nav{
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav .logo span{
+    color: orange;
+}
+
+.nav .links ul {
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .nav .links ul {
+        display: none;
+    }
+}
+
+
+.nav .links ul li{
+    margin-left: 20px;
+}
+
+.nav .links ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav .btns button{
+    background: #e1e137;
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 64px;
+}
+
+.hero{
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* in Two Columns only */
+
+@media (max-width: 991px) {
+    .hero{
+        flex-direction: column-reverse;
+    }
+}
+
+
+.hero .col{
+    flex-basis: 45%;
+}
+
+
+
+.hero .col img{
+    width: 400px;
+    max-width: 100%;
+}
+
+.hero .col h6{}
+
+.hero .col h2{}
+
+.hero .col p{}
+
+
+.section3{
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section3 .col{ 
+    flex-basis: 30%;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .section3 .col{
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section3 .col{
+        flex-basis: 100%;
+    }
+}
+.section3 .col img{
+    width: 150px;
+    height: 140px;
+}
+
+.section3 .col h2{}
+
+.section3 .col p{}
+
